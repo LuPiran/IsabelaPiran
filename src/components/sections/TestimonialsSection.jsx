@@ -52,8 +52,39 @@ export function TestimonialsSection() {
       </div>
 
       <div className="flex flex-col gap-6 md:flex-row md:items-stretch md:gap-4 lg:gap-6">
+        {/* Navegação mobile/tablet — setas + nome do depoimento */}
+        <div className="flex items-center justify-between gap-2 rounded-2xl border border-slate-200 bg-white p-2 md:hidden">
+          <button
+            type="button"
+            onClick={prev}
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-[#7a7892]/50 hover:bg-[#eeffcd] hover:text-[#4e383c]"
+            aria-label="Depoimento anterior"
+          >
+            <FaChevronLeft className="h-5 w-5" />
+          </button>
+
+          <button
+            type="button"
+            onClick={next}
+            className="min-w-0 flex-1 rounded-xl px-3 py-2 text-center transition hover:bg-slate-50"
+            aria-label="Próximo depoimento"
+          >
+            <span className="block truncate font-semibold text-slate-900">{current.name}</span>
+            <span className="block truncate text-xs text-slate-500">{current.hint}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={next}
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-[#7a7892]/50 hover:bg-[#eeffcd] hover:text-[#4e383c]"
+            aria-label="Próximo depoimento"
+          >
+            <FaChevronRight className="h-5 w-5" />
+          </button>
+        </div>
+
         {/* Lista lateral — índice dos depoimentos */}
-        <aside className="flex shrink-0 flex-row justify-center gap-2 md:w-44 md:flex-col md:justify-center md:border-r md:border-slate-200 md:pr-4 lg:w-52">
+        <aside className="hidden shrink-0 flex-row justify-center gap-2 md:w-44 md:flex-col md:justify-center md:border-r md:border-slate-200 md:pr-4 lg:flex lg:w-52">
           {items.map((item, i) => (
             <button
               key={item.id}
@@ -81,7 +112,7 @@ export function TestimonialsSection() {
           <button
             type="button"
             onClick={prev}
-            className="z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-md transition hover:border-[#7a7892]/50 hover:bg-[#eeffcd] hover:text-[#4e383c]"
+            className="z-10 hidden h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-md transition hover:border-[#7a7892]/50 hover:bg-[#eeffcd] hover:text-[#4e383c] md:flex"
             aria-label="Comentário anterior"
           >
             <FaChevronLeft className="h-5 w-5" />
@@ -129,7 +160,7 @@ export function TestimonialsSection() {
           <button
             type="button"
             onClick={next}
-            className="z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-md transition hover:border-[#7a7892]/50 hover:bg-[#eeffcd] hover:text-[#4e383c]"
+            className="z-10 hidden h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-md transition hover:border-[#7a7892]/50 hover:bg-[#eeffcd] hover:text-[#4e383c] md:flex"
             aria-label="Próximo comentário"
           >
             <FaChevronRight className="h-5 w-5" />

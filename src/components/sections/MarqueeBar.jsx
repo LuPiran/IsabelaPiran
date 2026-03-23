@@ -3,7 +3,7 @@ import { marqueeServices } from '../../content/site.js'
 
 export function MarqueeBar() {
   return (
-    <div className="relative left-1/2 z-0 w-screen max-w-[100vw] -translate-x-1/2 overflow-hidden bg-[#4e383c] py-3.5 text-white shadow-md">
+    <div className="relative z-0 w-full overflow-hidden rounded-2xl bg-[#4e383c] py-3.5 text-white shadow-md">
       <div className="marquee-track items-center">
         {[0, 1].map((loop) => (
           <div

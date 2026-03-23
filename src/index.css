@@ -10,11 +10,17 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--brand-bg);
   color: var(--brand-text);
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
 }
 
 /* Letreiro / marquee horizontal */
@@ -32,7 +38,7 @@ body {
   flex-direction: row;
   width: max-content;
   /* Movimento sutil e constante para ficar elegante e leve */
-  animation: marquee-scroll 56s linear infinite;
+  animation: marquee-scroll 72s linear infinite;
   will-change: transform;
 }
 
@@ -43,6 +49,12 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
     animation: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .marquee-track {
+    animation-duration: 95s;
   }
 }
 

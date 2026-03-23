@@ -30,13 +30,6 @@ export function useHomeAnimations({
           ease: 'power3.out',
         },
       )
-      gsap.to(circle, {
-        rotate: 6,
-        duration: 10,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-      })
     }
 
     if (appointment) {

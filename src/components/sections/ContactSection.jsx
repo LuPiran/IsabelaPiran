@@ -7,7 +7,7 @@ export function ContactSection() {
   const waLink = `https://wa.me/${c.whatsappDigits}`
 
   return (
-    <section className="mx-auto mt-20 w-full max-w-6xl rounded-3xl bg-white px-5 py-12 shadow-sm md:px-10 md:py-14">
+    <section className="mx-auto mt-16 w-full max-w-6xl overflow-hidden rounded-3xl bg-white px-4 py-10 shadow-sm sm:mt-20 sm:px-5 sm:py-12 md:px-10 md:py-14">
       <div className="mb-10 text-center md:text-left">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-slate-500">
           {c.label}
@@ -19,7 +19,7 @@ export function ContactSection() {
         <p className="mt-4 max-w-2xl text-slate-500">{c.intro}</p>
       </div>
 
-      <div className="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-12">
+      <div className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-12">
         <div className="min-w-0 flex flex-col justify-center space-y-6">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
@@ -32,7 +32,7 @@ export function ContactSection() {
             href={c.mapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex min-w-0 gap-4 rounded-2xl border border-slate-100 bg-slate-50/90 p-5 transition hover:border-[#7a7892]/40 hover:bg-[#eeffcd]/50"
+            className="group flex w-full max-w-full min-w-0 gap-4 overflow-hidden rounded-2xl border border-slate-100 bg-slate-50/90 p-4 transition hover:border-[#7a7892]/40 hover:bg-[#eeffcd]/50 sm:p-5"
           >
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#4e383c] text-white shadow-sm">
               <FaMapMarkerAlt className="h-5 w-5" aria-hidden />
@@ -48,10 +48,10 @@ export function ContactSection() {
             </div>
           </a>
 
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid w-full max-w-full gap-3 sm:grid-cols-2">
             <a
               href={`tel:${c.phoneTel}`}
-              className="inline-flex min-w-0 w-full items-center gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3 text-slate-800 shadow-sm transition hover:border-[#7a7892]/40"
+              className="inline-flex w-full max-w-full min-w-0 items-center gap-3 overflow-hidden rounded-2xl border border-slate-100 bg-white px-4 py-3 text-slate-800 shadow-sm transition hover:border-[#7a7892]/40"
             >
               <FaPhone className="h-4 w-4 text-[#4e383c]" aria-hidden />
               <span className="min-w-0 truncate font-medium">{c.phoneDisplay}</span>
@@ -60,7 +60,7 @@ export function ContactSection() {
               href={waLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-w-0 w-full items-center gap-3 rounded-2xl border border-[#7a7892]/40 bg-[#eeffcd]/80 px-4 py-3 font-medium text-[#2d2533] transition hover:bg-[#eeffcd]"
+              className="inline-flex w-full max-w-full min-w-0 items-center gap-3 overflow-hidden rounded-2xl border border-[#7a7892]/40 bg-[#eeffcd]/80 px-4 py-3 font-medium text-[#2d2533] transition hover:bg-[#eeffcd]"
             >
               <FaWhatsapp className="h-5 w-5 text-[#4e383c]" aria-hidden />
               <span className="min-w-0 truncate">{c.whatsappDisplay}</span>
@@ -69,13 +69,13 @@ export function ContactSection() {
 
           <a
             href={`mailto:${c.email}`}
-            className="inline-flex min-w-0 w-full items-center gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3 text-slate-800 shadow-sm transition hover:border-[#7a7892]/40"
+            className="inline-flex w-full max-w-full min-w-0 items-center gap-3 overflow-hidden rounded-2xl border border-slate-100 bg-white px-4 py-3 text-slate-800 shadow-sm transition hover:border-[#7a7892]/40"
           >
             <FaEnvelope className="h-4 w-4 text-[#4e383c]" aria-hidden />
             <span className="min-w-0 break-all font-medium">{c.email}</span>
           </a>
 
-          <div className="flex min-w-0 gap-3 rounded-2xl border border-slate-100 bg-slate-50/90 p-5">
+          <div className="flex w-full max-w-full min-w-0 gap-3 overflow-hidden rounded-2xl border border-slate-100 bg-slate-50/90 p-4 sm:p-5">
             <FaClock className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" aria-hidden />
             <div className="min-w-0">
               <p className="text-sm font-semibold text-slate-900">Horário</p>
@@ -84,7 +84,7 @@ export function ContactSection() {
           </div>
         </div>
 
-        <div className="min-w-0 flex flex-col">
+        <div className="min-w-0 flex max-w-full flex-col">
           <p className="mb-3 text-center text-xs font-medium uppercase tracking-wide text-slate-400 lg:text-right">
             Visual 3D
           </p>

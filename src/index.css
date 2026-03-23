@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --brand-bg: #e7ecea;
+  --brand-text: #2d2533;
+  --brand-primary: #4e383c;
+  --brand-accent: #7a7892;
+  --brand-soft: #eeffcd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--brand-bg);
+  color: var(--brand-text);
+}
+
+/* Letreiro / marquee horizontal */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  /* Movimento sutil e constante para ficar elegante e leve */
+  animation: marquee-scroll 56s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* Card de servico: borda que segue o cursor (anel ~4px via padding) */
+.service-card-frame {
+  --x: 50%;
+  --y: 50%;
+  background-image: radial-gradient(
+    440px circle at var(--x) var(--y),
+    rgba(122, 120, 146, 0.85),
+    rgba(122, 120, 146, 0.24) 40%,
+    transparent 64%
+  );
+  background-color: #d5dbd8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card-motion {
+    transform: none !important;
+  }
+}

@@ -225,7 +225,7 @@ export const contactSection = {
   /** Apenas dígitos com DDI 55 para wa.me */
   whatsappDigits: '5511945579588',
   email: 'Isabelapiran@hotmail.com',
-  hours: 'Segunda a sexta, 8h às 18h · Sábado, 8h às 12h',
+  hours: 'Segunda a sexta, 9:30 às 18:00 · Sábado, 9:30 às 12:00',
   /** Link do Google Maps ou Waze (opcional) */
   mapUrl: 'https://maps.google.com',
   /**

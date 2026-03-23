@@ -227,7 +227,7 @@ export const contactSection = {
   email: 'Isabelapiran@hotmail.com',
   hours: 'Segunda a sexta, 9:30 às 18:00 · Sábado, 9:30 às 12:00',
   /** Link do Google Maps ou Waze (opcional) */
-  mapUrl: 'https://maps.google.com',
+  mapUrl: 'https://maps.app.goo.gl/xco7cd3eTtHYaGf1A?g_st=iwb',
   /**
    * Modelo 3D na seção — arquivo em `public/` (ex.: OBJ exportado do Blender/Cinema 4D).
    */

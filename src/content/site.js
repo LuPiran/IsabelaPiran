@@ -77,7 +77,7 @@ export const servicesCards = [
     titulo: 'Restauração',
     descricao:
       'Recuperação estética e funcional de dentes com cárie, fraturas ou desgastes, preservando estrutura dental e naturalidade do sorriso.',
-    imagem: '/consulta1.jpg',
+    imagem: '/consulta3.jpg',
     icon: 'tooth',
   },
   {
@@ -85,7 +85,7 @@ export const servicesCards = [
     titulo: 'Limpeza',
     descricao:
       'Profilaxia profissional para remover placa e tártaro, ajudando na prevenção de cáries e doenças gengivais e mantendo a saúde bucal em dia.',
-    imagem: '/consulta2.jpg',
+    imagem: '/consulta4.jpg',
     icon: 'sparkles',
   },
   {
@@ -93,7 +93,7 @@ export const servicesCards = [
     titulo: 'Facetas em Resina',
     descricao:
       'Correções estéticas de forma, cor e pequenas imperfeições com técnica minimamente invasiva para um sorriso mais harmônico.',
-    imagem: '/consulta1.jpg',
+    imagem: '/consulta5.jpg',
     icon: 'wand',
   },
   {
@@ -101,7 +101,7 @@ export const servicesCards = [
     titulo: 'Urgências',
     descricao:
       'Atendimento para dor, fratura dentária, inflamações e intercorrências que exigem cuidado rápido, com foco em alívio e resolução segura.',
-    imagem: '/consulta2.jpg',
+    imagem: '/consulta6.jpg',
     icon: 'alert',
   },
   {
@@ -109,7 +109,7 @@ export const servicesCards = [
     titulo: 'Prótese',
     descricao:
       'Reabilitação oral com próteses planejadas para devolver mastigação, estética e conforto, respeitando as necessidades de cada paciente.',
-    imagem: '/consulta1.jpg',
+    imagem: '/consulta7.jpg',
     icon: 'teethOpen',
   },
   {
@@ -117,7 +117,7 @@ export const servicesCards = [
     titulo: 'Laserterapia',
     descricao:
       'Tecnologia auxiliar para acelerar cicatrização, reduzir inflamação e desconforto em diferentes fases do tratamento odontológico.',
-    imagem: '/consulta2.jpg',
+    imagem: '/consulta8.jpg',
     icon: 'bolt',
   },
 ]
@@ -130,42 +130,25 @@ export const testimonialsSection = {
   items: [
     {
       id: 't1',
-      name: 'Mariana S.',
-      hint: 'Clareamento dental',
+      name: 'Patricia Buneker',
+      hint: 'Paciente',
       text:
-        'Atendimento impecável! A Dra. Isabela explicou cada etapa do clareamento e me deixou muito à vontade. Recomendo de olhos fechados.',
+        'Sou uma paciente muito exigente e posso afirmar que fiquei totalmente satisfeita e feliz com o atendimento da dra Isabela.',
       rating: 5,
     },
     {
       id: 't2',
-      name: 'Ricardo O.',
-      hint: 'Odontologia geral',
+      name: 'Franciele Mota',
+      hint: 'Paciente',
       text:
-        'Consultório organizado, horário respeitado e um cuidado que você sente desde a recepção. Saio sempre com a sensação de estar em boas mãos.',
+        'Fiz um procedimento com a Dra Isabela e estou extremamente satisfeita. Ela demonstrou muita segurança, cuidado e profissionalismo. Atendimento atencioso, explicou todo o processo com muita clareza e o resultado ficou excelente. Recomendo com certeza!',
       rating: 5,
     },
     {
       id: 't3',
-      name: 'Fernanda L.',
-      hint: 'Avaliação e planejamento',
-      text:
-        'Eu tinha medo de dentista e a Dra. Isabela mudou isso. Tratamento sem dor e muita paciência. Finalmente encontrei um lugar em que confio.',
-      rating: 5,
-    },
-    {
-      id: 't4',
-      name: 'Paulo M.',
-      hint: 'Implante dentário',
-      text:
-        'Processo transparente do início ao fim. A equipe é atenciosa e a Dra. Isabela tira todas as dúvidas. Hoje sorri com confiança de novo.',
-      rating: 5,
-    },
-    {
-      id: 't5',
-      name: 'Camila R.',
-      hint: 'Estética dental',
-      text:
-        'Resultado natural e alinhado ao que eu queria. O consultório é limpo, moderno e o atendimento é humano. Super indico para quem busca qualidade.',
+      name: 'Luciane Szulczewski',
+      hint: 'Paciente',
+      text: 'Profissional excelente.',
       rating: 5,
     },
   ],
@@ -232,16 +215,16 @@ export const contactSection = {
   /** Nome curto do consultório (opcional) */
   clinicName: 'Consultório Dra. Isabela Piran',
   address: {
-    street: 'Rua Exemplo, 123 — Sala 45',
-    district: 'Bairro — Cidade/UF',
-    zip: '00000-000',
+    street: 'R. Zélia de Lima Rosa, 205 - sala 15',
+    district: 'Jd Águia da Castelo, Boituva - SP',
+    zip: '18550-000',
   },
-  phoneDisplay: '(00) 0000-0000',
-  phoneTel: '+5500000000000',
-  whatsappDisplay: '(11) 94391-1139',
+  phoneDisplay: '(11) 94557-9588',
+  phoneTel: '+5511945579588',
+  whatsappDisplay: '(11) 94557-9588',
   /** Apenas dígitos com DDI 55 para wa.me */
-  whatsappDigits: '5511943911139',
-  email: 'contato@exemplo.com.br',
+  whatsappDigits: '5511945579588',
+  email: 'Isabelapiran@hotmail.com',
   hours: 'Segunda a sexta, 8h às 18h · Sábado, 8h às 12h',
   /** Link do Google Maps ou Waze (opcional) */
   mapUrl: 'https://maps.google.com',

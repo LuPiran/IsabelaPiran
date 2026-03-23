@@ -97,7 +97,7 @@ export function HeroSection({ blueCircleRef, appointmentRef }) {
               aria-hidden
             />
             <img
-              src="/imagem-doutora.png"
+              src="/doutora.png"
               alt={hero.heroImageAlt}
               className="relative z-10 ml-auto w-full object-contain"
             />

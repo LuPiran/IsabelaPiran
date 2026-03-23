@@ -53,7 +53,7 @@ export function WhyChooseSection() {
               <div className="h-full w-full rounded-full bg-white p-2 ring-2 ring-white">
                 <div className="relative h-full w-full overflow-hidden rounded-full bg-slate-100">
                   <img
-                    src="/imagem-doutora.png"
+                    src="/doutora.png"
                     alt={whyChoose.imageAlt}
                     className="h-full w-full object-cover object-top"
                   />

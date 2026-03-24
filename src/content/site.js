@@ -19,7 +19,7 @@ export const hero = {
   titleHighlight: 'melhor sorriso',
   titleAfter: ' com a Dra. Isabela Piran',
   subtitle:
-    'Atendimento humanizado, tecnologia moderna e tratamentos personalizados para a sua saúde bucal — no consultório da Dra. Isabela Piran.',
+    'Atendimento humanizado, tecnologia moderna e tratamentos personalizados para a sua saúde bucal — no consultoria Aura Odontologia & Especialidades.',
   ctaPrimary: 'Explorar serviços',
   ctaVideo: 'Assistir vídeo',
   heroImageAlt: 'Dra. Isabela Piran — sorriso acolhedor',
@@ -84,7 +84,7 @@ export const servicesCards = [
     id: 'limpeza',
     titulo: 'Limpeza',
     descricao:
-      'Profilaxia profissional para remover placa e tártaro, ajudando na prevenção de cáries e doenças gengivais e mantendo a saúde bucal em dia.',
+      'Profilaxia profissional para remover placa e tártaro, ajudando na prevenção de cárie e doenças gengivais e mantendo a saúde bucal em dia.',
     imagem: '/consulta4.jpg',
     icon: 'sparkles',
   },
@@ -187,11 +187,9 @@ export const whyChoose = {
   titleLine1: 'Benefícios do meu atendimento:',
   titleLine2: 'seu caminho para um sorriso mais saudável',
   paragraph:
-    'No consultório da Dra. Isabela Piran você encontra um ambiente acolhedor, planejamento claro dos tratamentos e tecnologia alinhada ao que há de melhor em odontologia — sempre com foco na sua saúde e no seu bem-estar.',
+    'No consultoria Aura Odontologia & Especialidades você encontra um ambiente acolhedor, planejamento claro dos tratamentos e tecnologia alinhada ao que há de melhor em odontologia — sempre com foco na sua saúde e no seu bem-estar.',
   stats: [
-    { value: '15+', label: 'Anos de experiência' },
-    { value: '99%', label: 'Satisfação dos pacientes' },
-    { value: '2k+', label: 'Consultas realizadas' },
+    { value: '100%', label: 'Satisfação dos Clientes' },
   ],
   features: [
     'Agendamento simples e atendimento organizado',
@@ -213,7 +211,7 @@ export const contactSection = {
   intro:
     'Agende sua consulta ou tire dúvidas pelos canais abaixo. Estamos prontos para recebê-lo.',
   /** Nome curto do consultório (opcional) */
-  clinicName: 'Consultório Dra. Isabela Piran',
+  clinicName: 'Consultório Aura Odontologia & Especialidades',
   address: {
     street: 'R. Zélia de Lima Rosa, 205 - sala 15',
     district: 'Jd Águia da Castelo, Boituva - SP',
@@ -232,6 +230,6 @@ export const contactSection = {
    * Modelo 3D na seção — arquivo em `public/` (ex.: OBJ exportado do Blender/Cinema 4D).
    */
   model3d: {
-    modelPath: '/tooth_3d.obj',
+    modelPath: '/Toothpaste and Brush OBJ.obj',
   },
 }

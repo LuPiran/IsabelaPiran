@@ -112,8 +112,8 @@ function Scene({ modelPath }) {
         enablePan={false}
         minPolarAngle={Math.PI / 4}
         maxPolarAngle={Math.PI / 1.8}
-        maxDistance={12}
-        minDistance={4}
+        maxDistance={16}
+        minDistance={6}
       />
     </>
   )
@@ -127,7 +127,7 @@ export function ToothCanvas({ modelPath }) {
     <div className="relative h-[min(420px,55vw)] w-full min-h-[280px] overflow-hidden rounded-3xl border border-[#7a7892]/30 bg-gradient-to-b from-[#e7ecea] to-[#d9dfdd] shadow-inner md:h-[min(480px,42vw)] md:min-h-[360px]">
       <Canvas
         frameloop="demand"
-        camera={{ position: [0, 0.2, 6.2], fov: 42 }}
+        camera={{ position: [0, 0.2, 8.5], fov: 42 }}
         gl={{ alpha: true, antialias: true, powerPreference: 'high-performance' }}
         dpr={[1, 1.25]}
         className="h-full w-full touch-none"

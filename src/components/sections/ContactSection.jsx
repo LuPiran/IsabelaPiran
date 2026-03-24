@@ -1,6 +1,5 @@
 import { FaClock, FaEnvelope, FaMapMarkerAlt, FaPhone, FaWhatsapp } from 'react-icons/fa'
 import { contactSection } from '../../content/site.js'
-import { ToothCanvas } from '../three/ToothCanvas.jsx'
 
 export function ContactSection() {
   const c = contactSection
@@ -88,7 +87,13 @@ export function ContactSection() {
           <p className="mb-3 text-center text-xs font-medium uppercase tracking-wide text-slate-400 lg:text-right">
             Visual 3D
           </p>
-          <ToothCanvas key={c.model3d.modelPath} modelPath={c.model3d.modelPath} />
+          <div className="h-[500px] w-full overflow-hidden rounded-3xl border border-[#7a7892]/30 shadow-inner">
+            <img
+              src="/consultorio.jpg"
+              alt="Consultório Aura Odontologia & Especialidades"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>

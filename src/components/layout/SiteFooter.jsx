@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa6'
+import { FaInstagram, FaLinkedinIn } from 'react-icons/fa6'
 import { doctor } from '../../content/site.js'
 
 export function SiteFooter() {
@@ -10,21 +10,18 @@ export function SiteFooter() {
 
       <div className="mt-5 flex items-center justify-center gap-4">
         <a
-          href="#"
+          href="https://www.instagram.com/isabelapiran/"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Instagram"
           className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7a7892] text-white transition hover:bg-[#4e383c]"
         >
           <FaInstagram />
         </a>
         <a
-          href="#"
-          aria-label="Facebook"
-          className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7a7892] text-white transition hover:bg-[#4e383c]"
-        >
-          <FaFacebookF />
-        </a>
-        <a
-          href="#"
+          href="https://www.linkedin.com/in/isabela-piran-21b879296/"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
           className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7a7892] text-white transition hover:bg-[#4e383c]"
         >
